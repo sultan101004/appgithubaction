@@ -256,6 +256,13 @@ def test_is_prime() :
     assert is_prime(4) == False
     assert is_prime(1) == False
     assert is_prime(-3) == False
+def fibonacci_nth(n):
+    if n <= 0:
+        raise ValueError("n must be a positive integer")
+    a, b = 0, 1
+    for _ in range(n - 1):
+        a, b = b, a + b
+    return a
 
 def test_fibonacci() :
     assert fibonacci(7) == [0, 1, 1, 2, 3, 5, 8]
