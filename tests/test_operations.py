@@ -291,6 +291,22 @@ def test_cube() :
     assert cube(0) == 0
 
 
+
 # Additional tests can be added for other functions as needed
 
-
+def prime_factors(n):
+    factors = []
+    # Handle 2 separately
+    while n % 2 == 0:
+        factors.append(2)
+        n //= 2
+    # Handle odd factors
+    i = 3
+    while i * i <= n:
+        while n % i == 0:
+            factors.append(i)
+            n //= i
+        i += 2
+    if n > 2:
+        factors.append(n)
+    return factors
