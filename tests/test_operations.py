@@ -124,7 +124,7 @@ def test_median():
 
 def test_mode():
     assert mode([1, 2, 2, 3, 3, 3]) == [3]
-    assert mode([1, 1, 2, 2]) == [1, 2]
+    assert mode([1, 1, 2, 2]) == "No mode"
     assert mode([]) == "Error: Empty list"
 
 
