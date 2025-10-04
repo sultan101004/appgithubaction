@@ -1,4 +1,4 @@
-from src.math_operations import add, subtract, multiply, divide, permutation, combination, geometric_mean, harmonic_mean, logarithm, exponential, sigmoid, tanh, cosine, sine, tangent, cotangent, secant, cosecant, factorial, product_of_list, gcd, lcm, is_prime, prime_factors, fibonacci, fibonacci_nth, is_palindrome, is_armstrong, is_perfect, collatz_sequence, sum_of_squares, square_of_sum, mean, median, mode, variance, standard_deviation, average, floor_divide, modulus, sqrt, cube
+from src.math_operations import add, subtract, multiply, divide, permutation, combination, geometric_mean, harmonic_mean, logarithm, exponential, sigmoid, tanh, cosine, sine, tangent, cotangent, secant, cosecant, factorial, product_of_list, gcd, lcm, is_prime, fibonacci, fibonacci_nth, is_palindrome, is_armstrong, is_perfect, collatz_sequence, sum_of_squares, square_of_sum, mean, median, mode, variance, standard_deviation, average, floor_divide, modulus, sqrt, cube
 
 
 def test_add() :
