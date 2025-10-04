@@ -1,5 +1,4 @@
-from src.math_operations import add, subtract, multiply, divide, permutation, combination, geometric_mean, harmonic_mean, logarithm, exponential, sigmoid, tanh, cosine, sine, tangent, cotangent, secant, cosecant, factorial, product_of_list, gcd, lcm, is_prime, prime_factors, fibonacci, fibonacci_nth, is_palindrome, is_armstrong, is_perfect, collatz_sequence, sum_of_squares, square_of_sum, mean, median, mode, variance, standard_deviation, average, floor_divide, modulus, sqrt, cube
-
+from src.math_operations import add, subtract, multiply, divide, permutation, combination, geometric_mean, harmonic_mean, logarithm, exponential, sigmoid, tanh, cosine, sine, tangent, cotangent, secant, cosecant, factorial, product_of_list, gcd, lcm, is_prime, fibonacci, average, floor_divide, modulus, sqrt, cube
 
 def test_add() :
     assert add(2, 3) == 5
@@ -293,20 +292,3 @@ def test_cube() :
 
 
 # Additional tests can be added for other functions as needed
-
-def prime_factors(n):
-    factors = []
-    # Handle 2 separately
-    while n % 2 == 0:
-        factors.append(2)
-        n //= 2
-    # Handle odd factors
-    i = 3
-    while i * i <= n:
-        while n % i == 0:
-            factors.append(i)
-            n //= i
-        i += 2
-    if n > 2:
-        factors.append(n)
-    return factors
